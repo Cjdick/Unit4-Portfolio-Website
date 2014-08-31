@@ -2,7 +2,7 @@ html, body {
    height: 100%;
    margin-top:0;
    margin-bottom:0;
-   background-color:#33CBA1;
+   font-family: 'Arimo', sans-serif;
 }
 
 .body {
@@ -13,9 +13,8 @@ html, body {
    	margin-bottom:0;
 	background: #fff;
 	height:100%;
-	font-family: arial,sans-serif;
 	font-size: small;
-	background-color:#33CBA1;
+	width:1000px;
 }
 
 .body:after { content: " "; display: block; clear: both;} 
@@ -23,7 +22,7 @@ html, body {
 .top-bar {
 	position:relative;
 	width:100%;
-	height:6%;
+	height:40px;
 	padding:0;
 	margin:0;
 }
@@ -37,27 +36,36 @@ html, body {
 	height:100%;
 	margin:0;
 	padding:0;
-}
-
-.logo > p {
-	margin:1%;
-	padding:0%;
-	height:80%;
-	vertical-align:middle;
-	text-align:center;
-	line-height:150%;
-	font-size:150%;
-	font-weight:bold;
 	border:1px none;
 	border-radius: 7px;
 	background-color:#F37E3D;
 }
 
+a > .logo {
+	margin:10px;
+	padding:0%;
+	height:23px;
+	vertical-align:middle;
+	text-align:center;
+	/*line-height:150%;*/
+	/*font-size:150%;*/
+	width:25%;
+	font-weight:bold;
+}
+
+.logo > p {
+	margin:0;
+	padding:0;
+	vertical-align:middle;
+	text-align:center;
+	height:100%;
+	line-height:23px;
+}
 
 .top-menu {
 	position:relative;
 	float:left;
-	width:70%;
+	width:73%;
 	height:100%;
 }
 
@@ -65,8 +73,8 @@ html, body {
 	position:relative;
 	float:left;
 	width:15%;
-	height:80%;
-	margin:0.5%;
+	height:25px;
+	margin:10px;
 	padding:0;
 	text-align:center;
 	background-color:#F37E3D;
@@ -77,9 +85,9 @@ html, body {
 .top-menu-spacer {
 	position:relative;
 	float:left;
-	width:50%;
-	height:80%;
-	margin:0.5%;
+	width:46%;
+	height:40;
+	margin:0;
 	padding:0;
 	/*text-align:center;
 	background-color:#F37E3D;
@@ -106,11 +114,18 @@ html, body {
 	position:relative;
 	clear:both;
 	width:730px;
-	height:200px;
+	height:220px;
 	text-align:center;
 	padding-bottom:25px;
-	margin-right:50pc;
+	padding-left:135px;
+	padding-right:135px;
 	vertical-align:center;
+	/*margin:0 auto;*/
+	background-color:#6f5499;
+}
+
+.bx-wrapper .bx-viewport {
+	border:5px solid #cdbfe3;
 }
 
 .body-image img {
@@ -125,39 +140,52 @@ html, body {
 	padding:0;
 }
 
-.bottom-item-container {
-	position:relative;
+ul {
+	width:50%;
+	margin:0 auto;
+	padding:0;
+	background:#cdbfe3;
+}
+
+.bottom-item {
+	margin-top:25px;
+	padding-bottom:25px;
+	border-bottom: thin solid grey;
+}
+
+.bottom-header > p {
+	font-size:large;
+}
+
+.bottom-item-description {
 	float:left;
-	width:33%;
-	height:70%;
-	margin-left:0.16%;
-	margin-right:0.16%;
-	border:1px none;
-	border-radius: 7px;
+	width:60%;
+	height:110px;
+	font-size:large;
 }
 
-.bottom-item-header {
-	position:relative;
-	height:15%;
-	margin-top:2.5%;
-	margin-right:2.5%;
-	margin-left:2.5%;
-	margin-bottom:0;
-	background-color:#F37E3D;
-	text-align:center;
-	border-top:1px none;
-	border-top-left-radius: 7px;
-	border-top-right-radius: 7px;
+.bottom-item-description > p {
+	vertical-align:middle;
+	margin:0;
 }
 
-.bottom-item-text {
-	position:relative;
-	height:70%;
-	margin-top:0;
-	margin-right:2.5%;
-	margin-left:2.5%;
-	background-color:#F39E6D;
-	border-top:1px none;
-	border-bottom-left-radius: 7px;
-	border-bottom-right-radius: 7px;
+.bottom-item-image {
+	float:right;
+	width:40%;
+}
+
+.bottom-item-image > img {
+	float:right;
+	width:400px;
+}
+
+.bottom-item:after { content: " "; display: block; clear: both;} 
+
+h1 {
+	font-size:40px;
+}
+
+h3 {
+	font-size:20px;
+	margin-top:0px;
 }
