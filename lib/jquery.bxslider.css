@@ -32,8 +32,8 @@
 .bx-wrapper .bx-viewport {
 	-moz-box-shadow: 0 0 5px #ccc;
 	-webkit-box-shadow: 0 0 5px #ccc;
-	box-shadow: 0 0 5px #ccc;
-	border:  5px solid #fff;
+	box-shadow: 0 0 0px #6f5499;
+	border:  5px solid #6f5499;
 	left: -5px;
 	background: #fff;
 	
@@ -84,7 +84,7 @@
 }
 
 .bx-wrapper .bx-pager.bx-default-pager a {
-	background: #666;
+	background: white;
 	text-indent: -9999px;
 	display: block;
 	width: 10px;
