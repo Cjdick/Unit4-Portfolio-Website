@@ -32,7 +32,7 @@
 .bx-wrapper .bx-viewport {
 	-moz-box-shadow: 0 0 5px #ccc;
 	-webkit-box-shadow: 0 0 5px #ccc;
-	box-shadow: 0 0 5px #6f5499;
+	box-shadow: 0 0 0px #6f5499;
 	border:  5px solid #6f5499;
 	left: -5px;
 	background: #fff;

@@ -1,7 +1,6 @@
 html, body {
    height: 100%;
-   margin-top:0;
-   margin-bottom:0;
+   margin:0;
    font-family: 'Arimo', sans-serif;
 }
 
@@ -15,6 +14,30 @@ html, body {
 	height:100%;
 	font-size: small;
 	width:1000px;
+	float:left;
+}
+
+.side-spacer {
+	float:left;
+	width:300px;
+}
+
+.side-menu-spacer {
+	height:43px;
+}
+
+.side-image-spacer {
+	height:275px;
+	background-color:#6f5499;
+}
+
+.bottom-header-spacer {
+	height:141px;
+}
+
+.bottom-item-spacer {
+	height:215px;
+	border-bottom: thin solid grey;
 }
 
 .body:after { content: " "; display: block; clear: both;} 
@@ -27,6 +50,26 @@ html, body {
 	margin:0;
 }
 
+/* unvisited link */
+a:link {
+    color: #6f5499;
+}
+
+/* visited link */
+a:visited {
+    color: #6f5499;
+}
+
+/* mouse over link */
+a:hover {
+    color: #6f5499;
+}
+
+/* selected link */
+a:active {
+    color: #6f5499;
+}
+
 .top-bar:after { content: " "; display: block; clear: both;} 
 
 .logo {
@@ -36,14 +79,15 @@ html, body {
 	height:100%;
 	margin:0;
 	padding:0;
-	border:1px none;
-	border-radius: 7px;
-	background-color:#F37E3D;
+}
+
+.logo:hover {
+	background-color:#EFEFEF;
 }
 
 a > .logo {
-	margin:10px;
-	padding:0%;
+	margin:0px;
+	padding:10px 0;
 	height:23px;
 	vertical-align:middle;
 	text-align:center;
@@ -65,7 +109,7 @@ a > .logo {
 .top-menu {
 	position:relative;
 	float:left;
-	width:73%;
+	width:75%;
 	height:100%;
 }
 
@@ -73,20 +117,27 @@ a > .logo {
 	position:relative;
 	float:left;
 	width:15%;
-	height:25px;
-	margin:10px;
-	padding:0;
+	height:23px;
+	padding:10px;
 	text-align:center;
-	background-color:#F37E3D;
-	border:1px none;
-	border-radius: 7px;
 }
+
+.top-menu-item {
+	position:relative;
+	float:left;
+	width:15%;
+	height:23px;
+	padding:10px;
+	text-align:center;
+}
+
+
 
 .top-menu-spacer {
 	position:relative;
 	float:left;
-	width:46%;
-	height:40;
+	width:47%;
+	height:40px;
 	margin:0;
 	padding:0;
 	/*text-align:center;
@@ -101,7 +152,7 @@ a > .logo {
 }*/
 
 .top-menu-item:hover {
-	background-color:#F39E6D;
+	background-color:#EFEFEF;
 }
 
 .top-menu-item > p {
@@ -114,7 +165,7 @@ a > .logo {
 	position:relative;
 	clear:both;
 	width:730px;
-	height:220px;
+	height:250px;
 	text-align:center;
 	padding-bottom:25px;
 	padding-left:135px;
@@ -147,6 +198,11 @@ ul {
 	background:#cdbfe3;
 }
 
+ul > img {
+	width:730px;
+}
+
+
 .bottom-item {
 	margin-top:25px;
 	padding-bottom:25px;
@@ -171,12 +227,14 @@ ul {
 
 .bottom-item-image {
 	float:right;
-	width:40%;
+	width:30%;
+	margin:0 5%;
 }
 
 .bottom-item-image > img {
 	float:right;
-	width:400px;
+	width:300px;
+	height:165px;
 }
 
 .bottom-item:after { content: " "; display: block; clear: both;} 
